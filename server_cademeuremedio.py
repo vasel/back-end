@@ -33,7 +33,7 @@ def lista_medicamentos_sus(termo):
     else:
         return f.lista_medicamentos_sus(termo).to_json(orient='records')
 
-
+@app.route('/denuncia_municipio/<cod_posto>/<cod_medicamento>/<cod_municipio>')
 @app.route('/denuncia/<cod_posto>/<cod_medicamento>/<cod_municipio>')
 @app.route('/reporta_falta/<cod_posto>/<cod_medicamento>/<cod_municipio>')
 @cross_origin()
